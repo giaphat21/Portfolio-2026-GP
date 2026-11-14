@@ -28,6 +28,7 @@ import {
 import {
   computeManifestAudit,
   filterCaseStudiesByCategory,
+  normalizeAssetUrl,
   stepLightboxIndex,
 } from './utils/portfolioLogic';
 
@@ -45,7 +46,7 @@ export default function App() {
   const [diskResolved, setDiskResolved] = useState<Record<string, ResolvedAssetState>>(() => {
     const initial: Record<string, ResolvedAssetState> = {};
     for (const asset of PORTFOLIO_ASSETS) {
-      initial[asset.id] = { url: asset.uploadedPath, source: 'disk-aistudio' };
+      initial[asset.id] = { url: normalizeAssetUrl(asset.uploadedPath), source: 'disk-aistudio' };
     }
     return initial;
   });

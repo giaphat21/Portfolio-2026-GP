@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import React, { useMemo, useState } from 'react';
 import { PARTNER_LOGOS } from '../data/projects';
 import { PartnerLogo, ProjectCaseStudy, ProjectCategory } from '../types/portfolio';
+import { normalizeAssetUrl } from '../utils/portfolioLogic';
 
 interface SelectedWorksIntroProps {
   projects: ProjectCaseStudy[];
@@ -100,7 +101,7 @@ export const SelectedWorksIntro: React.FC<SelectedWorksIntroProps> = ({
       >
         <div className="flex h-20 w-full items-center justify-center sm:h-30">
           <img
-            src={partner.logoPath}
+            src={normalizeAssetUrl(partner.logoPath)}
             alt={partner.name}
             referrerPolicy="no-referrer"
             loading="eager"

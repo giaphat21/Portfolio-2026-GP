@@ -132,7 +132,7 @@ export async function probeDiskAssets(
   // Check sessionStorage for cached manifest to avoid redundant network fetch across page reloads
   if (typeof sessionStorage !== 'undefined') {
     try {
-      const stored = sessionStorage.getItem('gp_manifest_cache_v1');
+      const stored = sessionStorage.getItem('gp_manifest_cache_v2');
       if (stored) {
         const parsed = JSON.parse(stored) as Record<string, ResolvedAssetState>;
         if (Object.keys(parsed).length >= assets.length) {
@@ -164,7 +164,7 @@ export async function probeDiskAssets(
         cachedManifestResults = results;
         if (typeof sessionStorage !== 'undefined') {
           try {
-            sessionStorage.setItem('gp_manifest_cache_v1', JSON.stringify(results));
+            sessionStorage.setItem('gp_manifest_cache_v2', JSON.stringify(results));
           } catch {
             // ignore
           }
