@@ -1,0 +1,682 @@
+{
+  "assets": [
+    {
+      "id": "portrait-phat-1",
+      "originalFilename": "Phát1.jpg",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_portrait-phat-1.webp"
+    },
+    {
+      "id": "doc-cv-chinh",
+      "originalFilename": "CV chính.pdf",
+      "mediaType": "pdf",
+      "path": "/assets/aistudio/CV_ch_nh_cd47ebdf.pdf"
+    },
+    {
+      "id": "motion-intro-giaphat",
+      "originalFilename": "Intro Giaphat.mp4",
+      "mediaType": "video",
+      "path": "/assets/aistudio/intro_giaphat_web.mp4"
+    },
+    {
+      "id": "jci-lds-1",
+      "originalFilename": "LDS (1).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/LDS__1__379e33f7.png"
+    },
+    {
+      "id": "jci-lds-2",
+      "originalFilename": "LDS (2).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/LDS__2__a92e526c.png"
+    },
+    {
+      "id": "jci-lds-3",
+      "originalFilename": "LDS (3).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_jci-lds-3.webp"
+    },
+    {
+      "id": "jci-lds-4",
+      "originalFilename": "LDS (4).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_jci-lds-4.webp"
+    },
+    {
+      "id": "gp-kv-3",
+      "originalFilename": "KV (3).jpg",
+      "mediaType": "image",
+      "path": "/assets/aistudio/KV__3__fba1e653.jpg"
+    },
+    {
+      "id": "gp-sieusale-ngang",
+      "originalFilename": "Siêu Sale ngang.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gp-sieusale-ngang.webp"
+    },
+    {
+      "id": "gp-29-kv",
+      "originalFilename": "2.9 KV.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/2.9_KV_c16807ae.png"
+    },
+    {
+      "id": "gp-png-1",
+      "originalFilename": "Gia Phong (1).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gp-png-1.webp"
+    },
+    {
+      "id": "gp-png-2",
+      "originalFilename": "Gia Phong (2).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gp-png-2.webp"
+    },
+    {
+      "id": "gp-png-7",
+      "originalFilename": "Gia Phong (7).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gp-png-7.webp"
+    },
+    {
+      "id": "gp-png-6",
+      "originalFilename": "Gia Phong (6).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gp-png-6.webp"
+    },
+    {
+      "id": "gp-sieusale-1",
+      "originalFilename": "Siêu Sale 1.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gp-sieusale-1.webp"
+    },
+    {
+      "id": "gp-sieusale-2",
+      "originalFilename": "Siêu Sale 2.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gp-sieusale-2.webp"
+    },
+    {
+      "id": "gp-sieusale-3",
+      "originalFilename": "Siêu Sale 3.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gp-sieusale-3.webp"
+    },
+    {
+      "id": "gp-kv-1-png",
+      "originalFilename": "KV (1).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/KV__1__2694f851.png"
+    },
+    {
+      "id": "gp-kv-2",
+      "originalFilename": "KV (2).jpg",
+      "mediaType": "image",
+      "path": "/assets/aistudio/KV__2__910aad36.jpg"
+    },
+    {
+      "id": "gp-mat-bang",
+      "originalFilename": "mặt bằng.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gp-mat-bang.webp"
+    },
+    {
+      "id": "gp-png-5",
+      "originalFilename": "Gia Phong (5).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gp-png-5.webp"
+    },
+    {
+      "id": "gp-png-3",
+      "originalFilename": "Gia Phong (3).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gp-png-3.webp"
+    },
+    {
+      "id": "gp-png-4",
+      "originalFilename": "Gia Phong (4).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/Gia_Phong__4__852690a0.png"
+    },
+    {
+      "id": "gpd-1",
+      "originalFilename": "GPD (1).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gpd-1.webp"
+    },
+    {
+      "id": "gp-standee-1",
+      "originalFilename": "Standee  (1).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/Standee___1__2256ff1b.png"
+    },
+    {
+      "id": "gpd-3",
+      "originalFilename": "GPD (3).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gpd-3.webp"
+    },
+    {
+      "id": "gp-standee-2",
+      "originalFilename": "Standee  (2).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/Standee___2__bf76de18.png"
+    },
+    {
+      "id": "gpd-2",
+      "originalFilename": "GPD (2).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gpd-2.webp"
+    },
+    {
+      "id": "gpd-4",
+      "originalFilename": "GPD (4).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gpd-4.webp"
+    },
+    {
+      "id": "gpd-5",
+      "originalFilename": "GPD (5).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gpd-5.webp"
+    },
+    {
+      "id": "gp-cover-fb",
+      "originalFilename": "Cover FB.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gp-cover-fb.webp"
+    },
+    {
+      "id": "gp-kv-1-jpg",
+      "originalFilename": "KV (1).jpg",
+      "mediaType": "image",
+      "path": "/assets/aistudio/KV__1__c4abc288.jpg"
+    },
+    {
+      "id": "gomedia-backdrop-yep",
+      "originalFilename": "Backdrop YEP.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gomedia-backdrop-yep.webp"
+    },
+    {
+      "id": "gomedia-artboard-2",
+      "originalFilename": "Artboard 2.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gomedia-artboard-2.webp"
+    },
+    {
+      "id": "gomedia-artboard-3",
+      "originalFilename": "Artboard 3.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gomedia-artboard-3.webp"
+    },
+    {
+      "id": "gomedia-anh-1",
+      "originalFilename": "ảnh 1.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/_nh_1_1fddfcb3.png"
+    },
+    {
+      "id": "gomedia-anh-2",
+      "originalFilename": "ảnh 2.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gomedia-anh-2.webp"
+    },
+    {
+      "id": "gomedia-anh-3",
+      "originalFilename": "ảnh 3.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/_nh_3_73206b2a.png"
+    },
+    {
+      "id": "gomedia-anh-doc",
+      "originalFilename": "ảnh dọc.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_gomedia-anh-doc.webp"
+    },
+    {
+      "id": "gomedia-bai-10-5",
+      "originalFilename": "Bài 10 tháng 5.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/B_i_10_th_ng_5_6c75c592.png"
+    },
+    {
+      "id": "ryo-3",
+      "originalFilename": "ryo3.jpg",
+      "mediaType": "image",
+      "path": "/assets/aistudio/ryo3_ebda4ecd.jpg"
+    },
+    {
+      "id": "ryo-2",
+      "originalFilename": "ryo2.jpg",
+      "mediaType": "image",
+      "path": "/assets/aistudio/ryo2_fbdcc588.jpg"
+    },
+    {
+      "id": "ryo-tet-2026",
+      "originalFilename": "thông báo nghỉ Tết 2026.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/th_ng_b_o_ngh__T_t_2026_7559bd12.png"
+    },
+    {
+      "id": "yoshino-ngang",
+      "originalFilename": "Yoshino ngang.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/Yoshino_ngang_f6615127.png"
+    },
+    {
+      "id": "yoshino-1",
+      "originalFilename": "Yoshino 1.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_yoshino-1.webp"
+    },
+    {
+      "id": "yoshino-2",
+      "originalFilename": "Yoshino 2.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_yoshino-2.webp"
+    },
+    {
+      "id": "pongdang-dai-le-mockup",
+      "originalFilename": "2.9 KV 1.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/2.9_KV_1_f503f7e1.png"
+    },
+    {
+      "id": "pongdang-bai-12-4",
+      "originalFilename": "Bài 12 tháng 4.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_pongdang-bai-12-4.webp"
+    },
+    {
+      "id": "pongdang-bai-10-4",
+      "originalFilename": "Bài 10 tháng 4.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_pongdang-bai-10-4.webp"
+    },
+    {
+      "id": "pongdang-bai-12",
+      "originalFilename": "Bài 12.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/B_i_12_49c42e82.png"
+    },
+    {
+      "id": "pongdang-bai-15",
+      "originalFilename": "Bài 15.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/B_i_15_2b4f9c3a.png"
+    },
+    {
+      "id": "pongdang-bua-trua-kho",
+      "originalFilename": "BỮA TRƯA KHÓ - CÓ PONGDANG LOĐà Nẵng mấy hôm nay nóng quá !!! Cứ tới trưa là bắt đầu một “cuộc c.jpg",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_pongdang-bua-trua-kho.webp"
+    },
+    {
+      "id": "pongdang-bua-trua-159k",
+      "originalFilename": "☀️ BỮA TRƯA MÁT MẺ - CHÀO HÈ VUI VẺ CHỈ 159KDân chơi Đà thành ơi!! Hãy bắt đầu chuỗi ngày nắng g.jpg",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_pongdang-bua-trua-159k.webp"
+    },
+    {
+      "id": "pongdang-phao-hoa",
+      "originalFilename": "🎆 CÔNG THỨC CHUẨN CHO BUỔI HẸN PHÁO HOA HOÀN HẢOMùa pháo hoa đến rồi, thay vì vội vã tìm quán ă.jpg",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_pongdang-phao-hoa.webp"
+    },
+    {
+      "id": "yolife-ngang",
+      "originalFilename": "Yolife ngang.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_yolife-ngang.webp"
+    },
+    {
+      "id": "yolife-1",
+      "originalFilename": "Yolife 1.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_yolife-1.webp"
+    },
+    {
+      "id": "yolife-2",
+      "originalFilename": "Yolife 2.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_yolife-2.webp"
+    },
+    {
+      "id": "matcha-kv",
+      "originalFilename": "MATCHA.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_matcha-kv.webp"
+    },
+    {
+      "id": "tapgo-1",
+      "originalFilename": "Tap Go (1).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_tapgo-1.webp"
+    },
+    {
+      "id": "tapgo-2",
+      "originalFilename": "Tap Go (2).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/Tap_Go__2__7a80f962.png"
+    },
+    {
+      "id": "tapgo-3",
+      "originalFilename": "Tap Go (3).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/Tap_Go__3__2763a158.png"
+    },
+    {
+      "id": "tapgo-4",
+      "originalFilename": "Tap Go (4).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_tapgo-4.webp"
+    },
+    {
+      "id": "hybra-1",
+      "originalFilename": "Hybra on top.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_hybra-1.webp"
+    },
+    {
+      "id": "hybra-2",
+      "originalFilename": "Hybra on top 2.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_hybra-2.webp"
+    },
+    {
+      "id": "hybra-3",
+      "originalFilename": "Hybra on top 3.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_hybra-3.webp"
+    },
+    {
+      "id": "print-cat-1",
+      "originalFilename": "CATAGOPHY (1).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_print-cat-1.webp"
+    },
+    {
+      "id": "print-tap-chi",
+      "originalFilename": "tạp chí.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_print-tap-chi.webp"
+    },
+    {
+      "id": "print-cat-2",
+      "originalFilename": "CATAGOPHY (2).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_print-cat-2.webp"
+    },
+    {
+      "id": "print-trang-tong",
+      "originalFilename": "Trang tổng.jpg",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_print-trang-tong.webp"
+    },
+    {
+      "id": "print-chai-hoa-hong",
+      "originalFilename": "Chai hoa hồng.jpg",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_print-chai-hoa-hong.webp"
+    },
+    {
+      "id": "print-sua-rua-mat",
+      "originalFilename": "Sữa rửa mặt.jpg",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_print-sua-rua-mat.webp"
+    },
+    {
+      "id": "print-toner",
+      "originalFilename": "Toner.jpg",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_print-toner.webp"
+    },
+    {
+      "id": "motion-hue-heritage",
+      "originalFilename": "Hue Heritage.mp4",
+      "mediaType": "video",
+      "path": "/assets/aistudio/motion_hue_heritage_web.mp4"
+    },
+    {
+      "id": "motion-yoshino",
+      "originalFilename": "Yoshino Shooten.mp4",
+      "mediaType": "video",
+      "path": "/assets/aistudio/motion_yoshino_web.mp4"
+    },
+    {
+      "id": "motion-recap-event",
+      "originalFilename": "Recap Event(1).mp4",
+      "mediaType": "video",
+      "path": "/assets/aistudio/motion_recap_event_web.mp4"
+    },
+    {
+      "id": "motion-bds",
+      "originalFilename": "BĐS ĐÃ FIX.mp4",
+      "mediaType": "video",
+      "path": "/assets/aistudio/motion_bds_web.mp4"
+    },
+    {
+      "id": "motion-hut-cham-island",
+      "originalFilename": "HUT(1).mp4",
+      "mediaType": "video",
+      "path": "/assets/aistudio/motion_hut_cham_island_web.mp4"
+    },
+    {
+      "id": "motion-hut-tan-ky",
+      "originalFilename": "HUt(2).mp4",
+      "mediaType": "video",
+      "path": "/assets/aistudio/motion_hut_tan_ky_web.mp4"
+    },
+    {
+      "id": "motion-hut-tet",
+      "originalFilename": "HUT.mp4",
+      "mediaType": "video",
+      "path": "/assets/aistudio/motion_hut_tet_web.mp4"
+    },
+    {
+      "id": "motion-gia-phong-ban-an",
+      "originalFilename": "CBANKH22 + MDVTT-1M6 + GS-HT03.mp4",
+      "mediaType": "video",
+      "path": "/assets/aistudio/motion_gia_phong_ban_an_web.mp4"
+    },
+    {
+      "id": "motion-gia-phong-sofa",
+      "originalFilename": "SOFA  BK228-V.mp4",
+      "mediaType": "video",
+      "path": "/assets/aistudio/motion_gia_phong_sofa_web.mp4"
+    },
+    {
+      "id": "motion-hut-cyclos",
+      "originalFilename": "snaptik.vn_7604846286096944392.mp4",
+      "mediaType": "video",
+      "path": "/assets/aistudio/motion_hut_cyclos_web.mp4"
+    },
+    {
+      "id": "motion-hut-quan-cong",
+      "originalFilename": "snaptik.vn_7612093425566878983.mp4",
+      "mediaType": "video",
+      "path": "/assets/aistudio/motion_hut_quan_cong_web.mp4"
+    },
+    {
+      "id": "motion-hut-5-things",
+      "originalFilename": "snaptik.vn_7621534242610203922.mp4",
+      "mediaType": "video",
+      "path": "/assets/aistudio/motion_hut_5_things_web.mp4"
+    },
+    {
+      "id": "photo-hoian-1",
+      "originalFilename": "final (1).JPG",
+      "mediaType": "image",
+      "path": "/assets/aistudio/photo_hoian_1_web.jpg"
+    },
+    {
+      "id": "photo-hoian-2",
+      "originalFilename": "final (2).JPG",
+      "mediaType": "image",
+      "path": "/assets/aistudio/photo_hoian_2_web.jpg"
+    },
+    {
+      "id": "photo-hoian-3",
+      "originalFilename": "final.JPG",
+      "mediaType": "image",
+      "path": "/assets/aistudio/photo_hoian_3_web.jpg"
+    },
+    {
+      "id": "photo-hoian-4",
+      "originalFilename": "LbWn-2.jpg",
+      "mediaType": "image",
+      "path": "/assets/aistudio/photo_hoian_4_web.jpg"
+    },
+    {
+      "id": "photo-hoian-5",
+      "originalFilename": "LbWn-3.jpg",
+      "mediaType": "image",
+      "path": "/assets/aistudio/photo_hoian_5_web.jpg"
+    },
+    {
+      "id": "photo-interior-1",
+      "originalFilename": "1.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/1_19332c37.png"
+    },
+    {
+      "id": "photo-interior-2",
+      "originalFilename": "2.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_photo-interior-2.webp"
+    },
+    {
+      "id": "photo-interior-3",
+      "originalFilename": "3.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_photo-interior-3.webp"
+    },
+    {
+      "id": "photo-interior-4",
+      "originalFilename": "4.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/opt_photo-interior-4.webp"
+    },
+    {
+      "id": "cert-aiesec-leco-2025",
+      "originalFilename": "[AIESEC tại Việt Nam, chi nhánh Đà Nẵng] SỰ KIỆN MINI LECO 2025 -  GIẤY CHỨNG NHẬN - Văn Hữu Gia Phát-converted.jpg",
+      "mediaType": "image",
+      "path": "/assets/aistudio/_AIESEC_t_i_Vi_t_Nam__chi_nh_nh____N_ng__S__KI_N_MINI_LECO_2025_-__GI_Y_CH_NG_NH_N_-_V_n_H_u_Gia_Ph_t-converted_66bcda08.jpg"
+    },
+    {
+      "id": "cert-coursera-dtg101",
+      "originalFilename": "Gia Phát DS200135 Cousera DTG101.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/Gia_Ph_t_DS200135_Cousera_DTG101_d6c5119e.png"
+    },
+    {
+      "id": "cert-basic-ae",
+      "originalFilename": "certificate BASIC AE.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/certificate_BASIC_AE_042a2986.png"
+    },
+    {
+      "id": "cert-1",
+      "originalFilename": "Certificate (1).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/Certificate__1__f8eee279.png"
+    },
+    {
+      "id": "cert-2",
+      "originalFilename": "CERTIFICATE 2 (1).png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/CERTIFICATE_2__1__6b61de89.png"
+    },
+    {
+      "id": "cert-vanderbilt-gen-ai",
+      "originalFilename": "Coursera PHAT GENERATIVE.pdf",
+      "mediaType": "image",
+      "path": "/assets/aistudio/cert_vanderbilt_gen_ai.png"
+    },
+    {
+      "id": "cert-microsoft-intro-genai",
+      "originalFilename": "Coursera PHÁT Introduction.pdf",
+      "mediaType": "image",
+      "path": "/assets/aistudio/cert_microsoft_intro_genai.png"
+    },
+    {
+      "id": "cert-ibm-genai-ethics",
+      "originalFilename": "Coursera Phát LAE.pdf",
+      "mediaType": "image",
+      "path": "/assets/aistudio/cert_ibm_genai_ethics.png"
+    },
+    {
+      "id": "cert-vanderbilt-chatgpt-data",
+      "originalFilename": "Coursera Phát MMP.pdf",
+      "mediaType": "image",
+      "path": "/assets/aistudio/cert_vanderbilt_chatgpt_data.png"
+    },
+    {
+      "id": "cert-aicerts-research",
+      "originalFilename": "Gia Phát Văn Hữu AICERTS.pdf",
+      "mediaType": "image",
+      "path": "/assets/aistudio/cert_aicerts_research.png"
+    },
+    {
+      "id": "cert-fpt-rmc201c",
+      "originalFilename": "Gia Phát Văn Hữu RMC.pdf",
+      "mediaType": "image",
+      "path": "/assets/aistudio/cert_fpt_rmc201c.png"
+    },
+    {
+      "id": "cert-uva-design-thinking",
+      "originalFilename": "Gia Phát Văn Hữu.pdf",
+      "mediaType": "image",
+      "path": "/assets/aistudio/cert_uva_design_thinking.png"
+    },
+    {
+      "id": "cert-fpt-english-summit2",
+      "originalFilename": "VanHuuGiaPhat-DS200135-Chungchitienganh-ENG2600651-09112026.pdf",
+      "mediaType": "image",
+      "path": "/assets/aistudio/cert_fpt_english_summit2.png"
+    },
+    {
+      "id": "cert-fpt-honorable-summer2026",
+      "originalFilename": "VanHuuGiaPhat-DS200135-Hocsinhgioi-GK2653223-09112026.pdf",
+      "mediaType": "image",
+      "path": "/assets/aistudio/cert_fpt_honorable_summer2026.png"
+    },
+    {
+      "id": "tool-photoshop",
+      "originalFilename": "Adobe_Photoshop_CC_icon.svg.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/Adobe_Photoshop_CC_icon.svg_e1d000b6.png"
+    },
+    {
+      "id": "tool-illustrator",
+      "originalFilename": "Adobe_Illustrator_CC_icon.svg.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/Adobe_Illustrator_CC_icon.svg_9a24160a.png"
+    },
+    {
+      "id": "tool-after-effects",
+      "originalFilename": "Adobe_After_Effects_CC_icon.svg.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/Adobe_After_Effects_CC_icon.svg_c868a081.png"
+    },
+    {
+      "id": "tool-lightroom",
+      "originalFilename": "Adobe-Lightroom-Logo-Photo-Editing.webp",
+      "mediaType": "image",
+      "path": "/assets/aistudio/tool_lightroom_clean.png"
+    },
+    {
+      "id": "tool-davinci",
+      "originalFilename": "DaVinci_Resolve_Studio.png",
+      "mediaType": "image",
+      "path": "/assets/aistudio/DaVinci_Resolve_Studio_46485323.png"
+    },
+    {
+      "id": "tool-capcut",
+      "originalFilename": "fe973ef75e14e96c5fc5cdf4fcdc0ef4.jpg",
+      "mediaType": "image",
+      "path": "/assets/aistudio/tool_capcut_clean.png"
+    }
+  ]
+}
