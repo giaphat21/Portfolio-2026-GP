@@ -70,7 +70,7 @@ export const MediaSection: React.FC<MediaSectionProps> = ({
       id="media"
       data-testid="media-section"
       aria-label="Media"
-      className="relative min-h-[calc(100vh-140px)] w-full max-w-full overflow-x-hidden bg-[#F1EDE8] py-10 sm:py-14 text-[#1C1615] lg:py-20"
+      className="relative min-h-[calc(100vh-140px)] w-full max-w-full overflow-x-hidden bg-[#F1EDE8] pt-14 sm:pt-16 lg:pt-20 pb-12 sm:pb-16 lg:pb-24 text-[#1C1615]"
     >
       {/* Subtle Warm Paper Ambient Lighting */}
       <div

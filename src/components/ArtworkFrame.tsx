@@ -128,13 +128,12 @@ export const ArtworkFrame: React.FC<ArtworkFrameProps> = ({
               <video
                 ref={videoRef}
                 src={resolved.url}
-                poster={asset.posterPath ? normalizeAssetUrl(asset.posterPath) : undefined}
                 className="h-full w-full object-cover"
                 autoPlay
                 loop
                 muted
                 playsInline
-                preload={isNearViewport ? 'auto' : 'none'}
+                preload="metadata"
                 onLoadedData={(event) => {
                   const vid = event.currentTarget;
                   if (isNearViewport && vid.paused) {

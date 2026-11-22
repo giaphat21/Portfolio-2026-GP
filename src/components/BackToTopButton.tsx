@@ -34,7 +34,7 @@ export const BackToTopButton: React.FC = () => {
       type="button"
       onClick={scrollToTop}
       aria-label="Back to top of page"
-      className={`group fixed bottom-6 right-6 z-40 flex items-center gap-2 rounded-full border border-blue-400/40 bg-[#0B1120]/85 p-3 sm:px-4 sm:py-2.5 text-white shadow-[0_8px_30px_rgba(0,0,0,0.5),0_0_20px_rgba(59,130,246,0.35)] backdrop-blur-xl transition-all duration-300 hover:scale-105 hover:border-blue-400 hover:bg-[#1E293B]/90 hover:shadow-[0_0_30px_rgba(59,130,246,0.6)] cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400 ${
+      className={`group fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 flex items-center justify-center gap-2 rounded-full border border-blue-400/40 bg-[#0B1120]/90 p-2.5 sm:px-4 sm:py-2.5 text-white shadow-[0_8px_30px_rgba(0,0,0,0.5),0_0_20px_rgba(59,130,246,0.35)] backdrop-blur-xl transition-all duration-300 hover:scale-105 hover:border-blue-400 hover:bg-[#1E293B]/95 hover:shadow-[0_0_30px_rgba(59,130,246,0.6)] cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400 ${
         isVisible
           ? 'opacity-100 translate-y-0'
           : 'opacity-0 translate-y-4 pointer-events-none'

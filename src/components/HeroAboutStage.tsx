@@ -74,7 +74,6 @@ export const HeroAboutStage: React.FC<HeroAboutStageProps> = ({
           <video
             ref={videoRef}
             src={introVideoUrl}
-            poster={introVideoAsset?.posterPath ? normalizeAssetUrl(introVideoAsset.posterPath) : undefined}
             autoPlay
             loop
             muted={isMuted}

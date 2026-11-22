@@ -117,11 +117,11 @@ export const CertificatesSection: React.FC<CertificatesSectionProps> = ({
       <div className="cert-marquee-container relative mx-auto max-w-[1440px] space-y-8 overflow-hidden pb-16 pt-2 lg:pb-20">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-y-0 left-0 z-10 w-10 bg-gradient-to-r from-[#F5F2EB] to-transparent lg:w-20"
+          className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 sm:w-28 bg-gradient-to-r from-[#F5F2EB] to-transparent"
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-y-0 right-0 z-10 w-10 bg-gradient-to-l from-[#F5F2EB] to-transparent lg:w-20"
+          className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 sm:w-28 bg-gradient-to-l from-[#F5F2EB] to-transparent"
         />
 
         {/* Row 1 — Scrolling Left */}

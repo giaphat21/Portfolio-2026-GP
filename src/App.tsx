@@ -179,7 +179,7 @@ export default function App() {
           onOpenAssetDrawer={() => setIsAssetDrawerOpen(true)}
         />
 
-        <main className="w-full max-w-full overflow-x-hidden pt-[58px] sm:pt-[66px]">
+        <main className="w-full max-w-full overflow-x-hidden pt-[50px] sm:pt-[60px] md:pt-[66px]">
           {activeTrack === 'design' ? (
             <>
               <HeroAboutStage
