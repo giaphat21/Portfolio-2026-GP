@@ -316,28 +316,30 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
                 </div>
 
                 {/* CONTACT & STATUS */}
-                <div className="border-t border-white/10 pt-3 grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 text-xs sm:text-sm">
-                  <div>
-                    <span className="text-[9.5px] sm:text-[10.5px] font-bold uppercase tracking-wider text-white/50 block">
-                      CONTACT
-                    </span>
-                    <a
-                      href="mailto:vanhuugiaphat@gmail.com"
-                      className="mt-0.5 inline-flex items-center gap-1.5 text-white/90 hover:text-[#60A5FA] transition-colors"
-                    >
-                      <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#60A5FA]" />
-                      <span className="font-editorial-mono text-xs sm:text-[12.5px]">vanhuugiaphat@gmail.com</span>
-                    </a>
-                  </div>
+                <div className="border-t border-white/10 pt-3 text-xs sm:text-sm">
+                  <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-2.5">
+                    <div className="min-w-0">
+                      <span className="text-[9.5px] sm:text-[10.5px] font-bold uppercase tracking-wider text-white/50 block">
+                        CONTACT
+                      </span>
+                      <a
+                        href="mailto:vanhuugiaphat@gmail.com"
+                        className="mt-0.5 inline-flex items-center gap-1.5 text-white/90 hover:text-[#60A5FA] transition-colors"
+                      >
+                        <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#60A5FA] shrink-0" />
+                        <span className="font-editorial-mono text-xs sm:text-[12.5px]">vanhuugiaphat@gmail.com</span>
+                      </a>
+                    </div>
 
-                  <div>
-                    <span className="text-[9.5px] sm:text-[10.5px] font-bold uppercase tracking-wider text-white/50 block">
-                      STATUS
-                    </span>
-                    <span className="mt-0.5 inline-flex items-center gap-1.5 text-xs sm:text-[12.5px] font-bold text-emerald-400">
-                      <CheckCircle2 className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-                      SẴN SÀNG HỢP TÁC / FREELANCE
-                    </span>
+                    <div className="min-w-0">
+                      <span className="text-[9.5px] sm:text-[10.5px] font-bold uppercase tracking-wider text-white/50 block">
+                        STATUS
+                      </span>
+                      <span className="mt-0.5 inline-flex items-center gap-1.5 text-xs sm:text-[12.5px] font-bold text-emerald-400">
+                        <CheckCircle2 className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
+                        SẴN SÀNG HỢP TÁC / FREELANCE
+                      </span>
+                    </div>
                   </div>
                 </div>
 
