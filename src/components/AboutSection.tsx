@@ -294,7 +294,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
                     ABOUT ME
                   </h4>
                   <p className="mt-1.5 text-xs sm:text-[13px] lg:text-[13.5px] xl:text-[14px] leading-relaxed text-white/90 text-justify">
-                    Sinh viên năm 2 ngành Social Media tại Đại học FPT Đà Nẵng, có hơn 1 năm kinh nghiệm thực chiến về Graphic Design, Video Editing và UI/UX trong các lĩnh vực du lịch, F&amp;B, sự kiện và thương mại. Từng làm việc tại Go Media Agency, Nội Thất Gia Phong, tham gia thiết kế UI/UX website cho Trung Nguyên Legend và triển khai social post cho PongDang, Ryo Japanese, Yoshino Izakaya Shoten. Ngoài ra, tôi từng là Design Coordinator tại AIESEC và thiết kế logo cho sự kiện JCI Leadership Boost.
+                    Sinh viên năm 3 ngành Social Media tại Đại học FPT Đà Nẵng, có hơn 1 năm kinh nghiệm Graphic Design, Video Editing. Từng thực hiện nhiều dự án truyền thông đa lĩnh vực tại Agency Go Media và phụ trách thiết kế, edit cho 3 fanpage chính của Nội thất Gia Phong (Key Visual, POSM, hình ảnh quảng cáo). Thành thạo Adobe, các công cụ edit và ứng dụng AI (Gemini, ChatGPT, Kling AI, Higgsfield) vào công việc.
                   </p>
                 </div>
 
@@ -322,13 +322,22 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
                       <span className="text-[9.5px] sm:text-[10.5px] font-bold uppercase tracking-wider text-white/50 block">
                         CONTACT
                       </span>
-                      <a
-                        href="mailto:vanhuugiaphat@gmail.com"
-                        className="mt-0.5 inline-flex items-center gap-1.5 text-white/90 hover:text-[#60A5FA] transition-colors"
-                      >
-                        <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#60A5FA] shrink-0" />
-                        <span className="font-editorial-mono text-xs sm:text-[12.5px]">vanhuugiaphat@gmail.com</span>
-                      </a>
+                      <div className="mt-0.5 flex flex-wrap items-center gap-x-2.5 gap-y-1">
+                        <a
+                          href="mailto:vanhuugiaphat@gmail.com"
+                          className="inline-flex items-center gap-1.5 text-white/90 hover:text-[#60A5FA] transition-colors"
+                        >
+                          <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#60A5FA] shrink-0" />
+                          <span className="font-editorial-mono text-xs sm:text-[12.5px]">vanhuugiaphat@gmail.com</span>
+                        </a>
+                        <span className="text-white/30 hidden sm:inline">•</span>
+                        <a
+                          href="tel:0973717243"
+                          className="inline-flex items-center gap-1 text-white/80 hover:text-[#60A5FA] transition-colors font-editorial-mono text-xs sm:text-[12.5px]"
+                        >
+                          <span>0973 717 243</span>
+                        </a>
+                      </div>
                     </div>
 
                     <div className="min-w-0">
