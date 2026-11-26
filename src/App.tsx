@@ -13,6 +13,7 @@ import { ScrollProgress } from './components/ScrollProgress';
 import { SelectedWorksIntro } from './components/SelectedWorksIntro';
 import { SmoothScrollAndCursor } from './components/SmoothScrollAndCursor';
 import {
+  INTRO_HIGHLIGHT_CASE_STUDY,
   PHOTOGRAPHY_CASE_STUDIES,
   PORTFOLIO_ASSETS,
   PROJECT_CASE_STUDIES,
@@ -98,7 +99,12 @@ export default function App() {
   );
 
   const allCaseStudies = useMemo(
-    () => [...PROJECT_CASE_STUDIES, VIDEO_EDIT_CASE_STUDY, ...PHOTOGRAPHY_CASE_STUDIES],
+    () => [
+      ...PROJECT_CASE_STUDIES,
+      INTRO_HIGHLIGHT_CASE_STUDY,
+      VIDEO_EDIT_CASE_STUDY,
+      ...PHOTOGRAPHY_CASE_STUDIES,
+    ],
     [],
   );
 
@@ -216,6 +222,7 @@ export default function App() {
             </>
           ) : (
             <MediaSection
+              introProject={INTRO_HIGHLIGHT_CASE_STUDY}
               videoProject={VIDEO_EDIT_CASE_STUDY}
               photographyProjects={PHOTOGRAPHY_CASE_STUDIES}
               assetsById={assetsById}

@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import test from 'node:test';
 import {
+  INTRO_HIGHLIGHT_CASE_STUDY,
   PARTNER_LOGOS,
   PHOTOGRAPHY_CASE_STUDIES,
   PORTFOLIO_ASSETS,
@@ -32,6 +33,7 @@ test('manifest contains unique IDs and all expected project references', () => {
     PROJECT_CASE_STUDIES.every((p) => p.category !== 'Motion & Recap' && p.category !== 'Photography'),
     'Design case studies should not include Motion & Recap or Photography',
   );
+  assert.equal(INTRO_HIGHLIGHT_CASE_STUDY.assetIds.length, 4);
   assert.equal(VIDEO_EDIT_CASE_STUDY.assetIds.length, 12);
   assert.equal(PHOTOGRAPHY_CASE_STUDIES.length, 2);
   assert.equal(
@@ -84,6 +86,7 @@ test('manifest contains unique IDs and all expected project references', () => {
 
   for (const project of [
     ...PROJECT_CASE_STUDIES,
+    INTRO_HIGHLIGHT_CASE_STUDY,
     VIDEO_EDIT_CASE_STUDY,
     ...PHOTOGRAPHY_CASE_STUDIES,
   ]) {
