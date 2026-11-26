@@ -2817,7 +2817,7 @@ export const INTRO_HIGHLIGHT_CASE_STUDY: ProjectCaseStudy = {
 
 export const VIDEO_EDIT_CASE_STUDY: ProjectCaseStudy = {
   id: 'motion-cultural-recap',
-  indexNumber: '02',
+  indexNumber: '01',
   title: 'Video Edit & Motion Reels',
   subtitle: 'Cultural Films, Travel Reels, Commercial Spots & Event Recaps',
   brand: 'Selected Motion Works',

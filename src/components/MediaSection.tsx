@@ -12,7 +12,7 @@ interface MediaSectionProps {
   onSelectAsset: (asset: PortfolioAsset) => void;
 }
 
-type MediaDisciplineFilter = 'all' | 'intro' | 'video' | 'photography';
+type MediaDisciplineFilter = 'all' | 'video' | 'photography';
 
 const EASE_OUT_EXPO: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
@@ -82,7 +82,6 @@ export const MediaSection: React.FC<MediaSectionProps> = ({
   const interiorDetail = interiorPhotos[0];
   const interiorSquares = interiorPhotos.slice(1);
 
-  const showIntro = discipline === 'all' || discipline === 'intro';
   const showVideos = discipline === 'all' || discipline === 'video';
   const showPhotography = discipline === 'all' || discipline === 'photography';
 
@@ -145,10 +144,10 @@ export const MediaSection: React.FC<MediaSectionProps> = ({
             {(
               [
                 { id: 'all', label: 'All Media' },
-                ...(introVideos.length > 0
-                  ? [{ id: 'intro', label: `Intro Highlight (${introVideos.length})` }]
-                  : []),
-                { id: 'video', label: `Video Edit (${videos.length})` },
+                {
+                  id: 'video',
+                  label: `Video Edit (${introVideos.length + videos.length})`,
+                },
                 {
                   id: 'photography',
                   label: `Photography (${hoianPhotos.length + interiorPhotos.length})`,
@@ -180,133 +179,13 @@ export const MediaSection: React.FC<MediaSectionProps> = ({
           </div>
         </motion.div>
 
-        {/* === BLOCK 01: INTRO HIGHLIGHT (1 WIDESCREEN 16:9 + 3 VERTICAL 9:16) === */}
-        {showIntro && introVideos.length > 0 && (
-          <div id="media-intro-highlight" className="scroll-mt-20 pt-10 sm:pt-12 lg:pt-14">
-            <div className="mb-6 sm:mb-8 flex flex-wrap items-baseline justify-between gap-4 border-b border-[#1C1615]/15 pb-4">
-              <div className="flex items-baseline gap-3">
-                <span className="font-editorial-mono text-xs font-semibold text-[#2563EB]">
-                  01
-                </span>
-                <h2 className="font-editorial-display text-2xl font-extrabold tracking-tight text-[#1C1615] sm:text-3xl">
-                  INTRO HIGHLIGHT
-                </h2>
-              </div>
-              <p className="text-xs font-medium text-[#1C1615]/60">
-                1 Widescreen Cinematic Film (16:9) · 3 Vertical Dynamic Openers (9:16)
-              </p>
-            </div>
-
-            {/* Asymmetric High-End Bento Grid */}
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.05 }}
-              transition={{ duration: 0.45, ease: EASE_OUT_EXPO }}
-              className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 lg:gap-7 items-stretch"
-            >
-              {/* Left Column: 16:9 Horizontal Cinematic Hero Video (7 cols on lg/xl) */}
-              {introHorizontal && (
-                <div className="lg:col-span-7 flex flex-col justify-between rounded-2xl border border-[#1C1615]/15 bg-white/70 p-3.5 sm:p-4 shadow-sm backdrop-blur-sm transition-all duration-300 hover:border-[#2563EB]/40 hover:shadow-[0_12px_32px_rgba(37,99,235,0.12)]">
-                  <div>
-                    <div className="mb-2.5 flex items-center justify-between">
-                      <span className="inline-flex items-center gap-1.5 rounded-full bg-[#2563EB]/10 px-2.5 py-1 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-[#2563EB]">
-                        <span className="h-1.5 w-1.5 rounded-full bg-[#2563EB] animate-pulse" />
-                        16:9 Cinematic Widescreen
-                      </span>
-                      <span className="text-[11px] font-mono text-[#1C1615]/50">
-                        Brand Story Film
-                      </span>
-                    </div>
-
-                    <div className="overflow-hidden rounded-xl shadow-md border border-[#1C1615]/10">
-                      <ArtworkFrame
-                        asset={introHorizontal}
-                        resolved={resolvedMap[introHorizontal.id]}
-                        onSelect={onSelectAsset}
-                        variant="light"
-                        showCaption={false}
-                        frameAspect="16 / 9"
-                        customAccent={introProject?.palette?.accent || '#38BDF8'}
-                        customSurface={introProject?.palette?.surface || '#0F224D'}
-                      />
-                    </div>
-                  </div>
-
-                  <div className="mt-3 px-1 pt-2 border-t border-[#1C1615]/10 flex flex-wrap items-center justify-between gap-2">
-                    <div>
-                      <p className="text-sm sm:text-base font-bold text-[#1C1615]">
-                        {introHorizontal.brand}
-                      </p>
-                      <p className="text-xs text-[#1C1615]/70 line-clamp-1">
-                        {introHorizontal.caption}
-                      </p>
-                    </div>
-                    <span className="text-[10.5px] font-semibold text-[#2563EB] bg-[#2563EB]/10 px-2 py-0.5 rounded">
-                      Featured Film
-                    </span>
-                  </div>
-                </div>
-              )}
-
-              {/* Right Column: 3 Vertical 9:16 Social & Stage Reels (5 cols on lg/xl) */}
-              <div className="lg:col-span-5 flex flex-col justify-between rounded-2xl border border-[#1C1615]/15 bg-white/70 p-3.5 sm:p-4 shadow-sm backdrop-blur-sm transition-all duration-300 hover:border-[#2563EB]/40 hover:shadow-[0_12px_32px_rgba(37,99,235,0.12)]">
-                <div>
-                  <div className="mb-2.5 flex items-center justify-between">
-                    <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-2.5 py-1 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-emerald-600">
-                      <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                      9:16 Vertical Reels
-                    </span>
-                    <span className="text-[11px] font-mono text-[#1C1615]/50">
-                      Stage · Dance · Team
-                    </span>
-                  </div>
-
-                  {/* 3-Column Grid of Vertical Reels */}
-                  <div className="grid grid-cols-3 gap-2 sm:gap-3">
-                    {introVerticals.map((asset) => (
-                      <div key={asset.id} className="flex flex-col">
-                        <div className="overflow-hidden rounded-xl shadow-sm border border-[#1C1615]/10">
-                          <ArtworkFrame
-                            asset={asset}
-                            resolved={resolvedMap[asset.id]}
-                            onSelect={onSelectAsset}
-                            variant="light"
-                            showCaption={false}
-                            frameAspect="9 / 16"
-                            customAccent={introProject?.palette?.accent || '#38BDF8'}
-                            customSurface={introProject?.palette?.surface || '#0F224D'}
-                          />
-                        </div>
-                        <div className="mt-2 px-0.5">
-                          <p className="truncate text-xs font-bold text-[#1C1615]">
-                            {asset.brand}
-                          </p>
-                          <p className="truncate text-[10px] text-[#1C1615]/65">
-                            {asset.caption.replace(/Intro [^—]+—\s*/, '')}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="mt-3 pt-2 border-t border-[#1C1615]/10 text-[11px] text-[#1C1615]/60 flex items-center justify-between">
-                  <span>Fast-paced cut & sound sync</span>
-                  <span className="font-mono text-[#2563EB] font-semibold">3 Reels</span>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        )}
-
-        {/* === BLOCK 02: VIDEO EDIT (4 VIDEOS PER ROW) === */}
+        {/* === BLOCK 01: VIDEO EDIT (INTRO REELS AT TOP + 4-COLUMN ROWS) === */}
         {showVideos && (
-          <div id="media-video-edit" className="scroll-mt-20 pt-14 lg:pt-20">
+          <div id="media-video-edit" className="scroll-mt-20 pt-12 lg:pt-16">
             <div className="mb-8 flex flex-wrap items-baseline justify-between gap-4 border-b border-[#1C1615]/15 pb-4">
               <div className="flex items-baseline gap-3">
                 <span className="font-editorial-mono text-xs font-semibold text-[#2563EB]">
-                  02
+                  01
                 </span>
                 <h2 className="font-editorial-display text-2xl font-extrabold tracking-tight text-[#1C1615] sm:text-3xl">
                   VIDEO EDIT
@@ -316,6 +195,111 @@ export const MediaSection: React.FC<MediaSectionProps> = ({
                 DaVinci Resolve Studio · After Effects · CapCut
               </p>
             </div>
+
+            {/* Top Row: 4 Intro Videos (1 Widescreen 16:9 + 3 Vertical 9:16) */}
+            {introVideos.length > 0 && (
+              <div className="mb-8 sm:mb-10">
+                <motion.div
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.05 }}
+                  transition={{ duration: 0.45, ease: EASE_OUT_EXPO }}
+                  className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 lg:gap-7 items-stretch"
+                >
+                  {/* Left Column: 16:9 Horizontal Cinematic Hero Video (7 cols on lg/xl) */}
+                  {introHorizontal && (
+                    <div className="lg:col-span-7 flex flex-col justify-between rounded-2xl border border-[#1C1615]/15 bg-white/70 p-3.5 sm:p-4 shadow-sm backdrop-blur-sm transition-all duration-300 hover:border-[#2563EB]/40 hover:shadow-[0_12px_32px_rgba(37,99,235,0.12)]">
+                      <div>
+                        <div className="mb-2.5 flex items-center justify-between">
+                          <span className="inline-flex items-center gap-1.5 rounded-full bg-[#2563EB]/10 px-2.5 py-1 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-[#2563EB]">
+                            <span className="h-1.5 w-1.5 rounded-full bg-[#2563EB] animate-pulse" />
+                            16:9 Cinematic Widescreen
+                          </span>
+                          <span className="text-[11px] font-mono text-[#1C1615]/50">
+                            Brand Story Film
+                          </span>
+                        </div>
+
+                        <div className="overflow-hidden rounded-xl shadow-md border border-[#1C1615]/10">
+                          <ArtworkFrame
+                            asset={introHorizontal}
+                            resolved={resolvedMap[introHorizontal.id]}
+                            onSelect={onSelectAsset}
+                            variant="light"
+                            showCaption={false}
+                            frameAspect="16 / 9"
+                            customAccent={introProject?.palette?.accent || '#38BDF8'}
+                            customSurface={introProject?.palette?.surface || '#0F224D'}
+                          />
+                        </div>
+                      </div>
+
+                      <div className="mt-3 px-1 pt-2 border-t border-[#1C1615]/10 flex flex-wrap items-center justify-between gap-2">
+                        <div>
+                          <p className="text-sm sm:text-base font-bold text-[#1C1615]">
+                            {introHorizontal.brand}
+                          </p>
+                          <p className="text-xs text-[#1C1615]/70 line-clamp-1">
+                            {introHorizontal.caption}
+                          </p>
+                        </div>
+                        <span className="text-[10.5px] font-semibold text-[#2563EB] bg-[#2563EB]/10 px-2 py-0.5 rounded">
+                          Featured Film
+                        </span>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Right Column: 3 Vertical 9:16 Social & Stage Reels (5 cols on lg/xl) */}
+                  <div className="lg:col-span-5 flex flex-col justify-between rounded-2xl border border-[#1C1615]/15 bg-white/70 p-3.5 sm:p-4 shadow-sm backdrop-blur-sm transition-all duration-300 hover:border-[#2563EB]/40 hover:shadow-[0_12px_32px_rgba(37,99,235,0.12)]">
+                    <div>
+                      <div className="mb-2.5 flex items-center justify-between">
+                        <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-2.5 py-1 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-emerald-600">
+                          <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                          9:16 Vertical Reels
+                        </span>
+                        <span className="text-[11px] font-mono text-[#1C1615]/50">
+                          Stage · Dance · Team
+                        </span>
+                      </div>
+
+                      {/* 3-Column Grid of Vertical Reels */}
+                      <div className="grid grid-cols-3 gap-2 sm:gap-3">
+                        {introVerticals.map((asset) => (
+                          <div key={asset.id} className="flex flex-col">
+                            <div className="overflow-hidden rounded-xl shadow-sm border border-[#1C1615]/10">
+                              <ArtworkFrame
+                                asset={asset}
+                                resolved={resolvedMap[asset.id]}
+                                onSelect={onSelectAsset}
+                                variant="light"
+                                showCaption={false}
+                                frameAspect="9 / 16"
+                                customAccent={introProject?.palette?.accent || '#38BDF8'}
+                                customSurface={introProject?.palette?.surface || '#0F224D'}
+                              />
+                            </div>
+                            <div className="mt-2 px-0.5">
+                              <p className="truncate text-xs font-bold text-[#1C1615]">
+                                {asset.brand}
+                              </p>
+                              <p className="truncate text-[10px] text-[#1C1615]/65">
+                                {asset.caption.replace(/Intro [^—]+—\s*/, '')}
+                              </p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="mt-3 pt-2 border-t border-[#1C1615]/10 text-[11px] text-[#1C1615]/60 flex items-center justify-between">
+                      <span>Fast-paced cut & sound sync</span>
+                      <span className="font-mono text-[#2563EB] font-semibold">3 Reels</span>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            )}
 
             <div className="space-y-8" data-testid="video-edit-rows">
               {videoRows.map((row, rowIndex) => {
@@ -373,13 +357,13 @@ export const MediaSection: React.FC<MediaSectionProps> = ({
           </div>
         )}
 
-        {/* === BLOCK 03: PHOTOGRAPHY === */}
+        {/* === BLOCK 02: PHOTOGRAPHY === */}
         {showPhotography && (
           <div id="media-photography" className="scroll-mt-20 pt-16 lg:pt-24">
             <div className="mb-10 flex flex-wrap items-baseline justify-between gap-4 border-b border-[#1C1615]/15 pb-4">
               <div className="flex items-baseline gap-3">
                 <span className="font-editorial-mono text-xs font-semibold text-[#2563EB]">
-                  03
+                  02
                 </span>
                 <h2 className="font-editorial-display text-2xl font-extrabold tracking-tight text-[#1C1615] sm:text-3xl">
                   PHOTOGRAPHY
